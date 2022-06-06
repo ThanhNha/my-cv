@@ -7,14 +7,6 @@ body.nav-active {
   top: 0;
   left: 0;
 }
-.theme-dark h1,
-.theme-dark h2,
-.theme-dark h3,
-.theme-dark h4,
-.theme-dark h5,
-.theme-dark p {
-  color: $color-white;
-}
 .btn-link.btn-left-top .cbd {
   overflow: hidden;
   position: relative;
@@ -39,7 +31,7 @@ body.nav-active {
 
 .btn-link.btn-left-top:hover .shin {
   padding-right: 2em;
-  transform: translateX(-8em) rotate(0.001deg);
+  transform: translateX(-8.1em) rotate(0.001deg);
 }
 .btn-link.btn-left-top .thanhnha {
   position: absolute;
@@ -62,9 +54,6 @@ body.nav-active {
   border-radius: 0;
   overflow: visible;
 }
-.nav-bar .links-wrap li:last-child {
-  display: none;
-}
 
 //menu hambuger
 .btn-hamburger {
@@ -81,6 +70,7 @@ body.nav-active {
     border-radius: 100%;
   }
 }
+
 .btn-hamburger .btn-click {
   border: 0;
   background-color: $color-black-200;

@@ -1,5 +1,11 @@
 body.nav-active {
+  width: 100%;
+  height: 100%;
+  margin: 0;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .theme-dark h1,
 .theme-dark h2,
@@ -152,13 +158,14 @@ body.nav-active {
   content: "";
   display: block;
   position: absolute;
-  background: var(--color-white);
+  background: $color-white;
   height: 750%;
   left: 50%;
   border-radius: 50%;
   transform: translate(-50%, -86.666%);
   z-index: 1;
 }
+
 .fixed-nav-back {
   background: linear-gradient(to right, hsla(220, 13%, 0%, 0.3) 40%, hsla(220, 13%, 0%, 1) 80%);
   opacity: 0;
@@ -166,6 +173,25 @@ body.nav-active {
   z-index: 100;
   pointer-events: none;
   will-change: opacity;
+}
+.rounded-div-wrap {
+  width: 100%;
+  top: 0;
+  position: relative;
+  height: 10vh;
+  overflow: hidden;
+  .rounded-div {
+    width: 150%;
+    content: "";
+    display: block;
+    position: absolute;
+    background: $color-white;
+    height: 750%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -86.666%);
+    z-index: 1;
+  }
 }
 .fixed-nav {
   position: fixed;
@@ -184,23 +210,11 @@ body.nav-active {
     height: 100%;
     top: 0;
     .rounded-div-wrap {
-      width: 100%;
-      top: 0;
-      position: relative;
-      height: 10vh;
-      overflow: hidden;
-      .rounded-div {
-        width: 150%;
-        content: "";
-        display: block;
-        position: absolute;
-        background: $color-white;
-        height: 750%;
-        left: 50%;
-        border-radius: 50%;
-        transform: translate(-50%, -86.666%);
-        z-index: 1;
-      }
+      width: 6vw;
+      height: 100%;
+      @include transition(0.3s);
+      transition: all 0.85s cubic-bezier(0.7, 0, 0.2, 1);
+      will-change: width;
     }
   }
 }

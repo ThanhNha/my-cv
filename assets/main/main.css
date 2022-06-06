@@ -287,7 +287,13 @@ html {
 }
 
 body.nav-active {
+  width: 100%;
+  height: 100%;
+  margin: 0;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .theme-dark h1,
@@ -452,7 +458,7 @@ body.nav-active {
   content: "";
   display: block;
   position: absolute;
-  background: var(--color-white);
+  background: #fafafa;
   height: 750%;
   left: 50%;
   border-radius: 50%;
@@ -467,6 +473,26 @@ body.nav-active {
   z-index: 100;
   pointer-events: none;
   will-change: opacity;
+}
+
+.rounded-div-wrap {
+  width: 100%;
+  top: 0;
+  position: relative;
+  height: 10vh;
+  overflow: hidden;
+}
+.rounded-div-wrap .rounded-div {
+  width: 150%;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fafafa;
+  height: 750%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -86.666%);
+  z-index: 1;
 }
 
 .fixed-nav {
@@ -488,23 +514,15 @@ body.nav-active {
   top: 0;
 }
 .fixed-nav .fixed-nav-rounded-div .rounded-div-wrap {
-  width: 100%;
-  top: 0;
-  position: relative;
-  height: 10vh;
-  overflow: hidden;
-}
-.fixed-nav .fixed-nav-rounded-div .rounded-div-wrap .rounded-div {
-  width: 150%;
-  content: "";
-  display: block;
-  position: absolute;
-  background: #fafafa;
-  height: 750%;
-  left: 50%;
-  border-radius: 50%;
-  transform: translate(-50%, -86.666%);
-  z-index: 1;
+  width: 6vw;
+  height: 100%;
+  -webkit-transition: 0.3s 0.2s ease-in-out;
+  -moz-transition: 0.3s 0.2s ease-in-out;
+  -ms-transition: 0.3s 0.2s ease-in-out;
+  -o-transition: 0.3s 0.2s ease-in-out;
+  transition: 0.3s 0.2s ease-in-out;
+  transition: all 0.85s cubic-bezier(0.7, 0, 0.2, 1);
+  will-change: width;
 }
 
 .fixed-nav-inner {

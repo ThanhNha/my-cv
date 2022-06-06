@@ -1,0 +1,50 @@
+html {
+  overflow-x: hidden;
+}
+body.fix {
+  overflow: hidden;
+}
+body {
+  min-height: 3000px;
+  box-sizing: border-box;
+  // font-size: 16px !important;
+  // line-height: 150%;
+  // font-family: $font-primary !important;
+  // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-display: auto !important;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+a,
+a:hover {
+  text-decoration: auto !important;
+  // text-transform: none;
+  // color: #b5dbab;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.editor-post-featured-image .components-responsive-wrapper__content,
+.components-responsive-wrapper__content {
+  position: relative !important;
+}
+button:focus,
+button {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

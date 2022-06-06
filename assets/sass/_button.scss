@@ -1,0 +1,76 @@
+//btn animation
+.btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 2.5em;
+  z-index: 2;
+  color: var(--color-dark);
+  position: relative;
+  transform: rotate(0.001deg);
+  pointer-events: none;
+  will-change: transform, color;
+}
+.btn-click {
+  cursor: pointer;
+  border: 0;
+  // color: red;
+  background: transparent;
+  border-radius: 15px;
+  min-width: 1em;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  will-change: transform;
+  outline: 0;
+  transform: translateZ(0) rotate(0.001deg);
+}
+.btn-fill {
+  background: $color-green-300;
+  position: absolute;
+  width: 150%;
+  height: 200%;
+  border-radius: 50%;
+  top: -50%;
+  left: -25%;
+  transform: translate3d(0, -76%, 0);
+  will-change: transform;
+  transition: background-color ease-in-out 0.25s;
+}
+.btn-red {
+  .btn-fill {
+    background: $color-green-200;
+  }
+}
+.btn-outline-red .btn-click {
+  border: 1px solid $color-green-300;
+}
+//btn-not-background
+.btn-outline-red .btn-click {
+  border: 1px solid $color-green-300;
+}
+
+.btn-outline-red .btn-click {
+  .btn-text .btn-text-inner {
+    font-weight: bold;
+    color: $color-green-300;
+  }
+}
+//btn-background-red
+.btn-red .btn-click {
+  background: $color-green-300;
+}
+.btn-red .btn-click {
+  .btn-text .btn-text-inner {
+    font-weight: bold;
+    color: $color-white;
+  }
+}

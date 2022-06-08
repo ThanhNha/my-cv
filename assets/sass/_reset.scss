@@ -1,5 +1,6 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body.fix {
   overflow: hidden;
@@ -43,8 +44,4 @@ h6 {
 button:focus,
 button {
   outline: none;
-}
-
-html {
-  scroll-behavior: smooth;
 }

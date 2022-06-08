@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.css">
     <link rel="stylesheet" href="./assets/main/main.css">
     <title>CV BY SHIN</title>
 </head>
@@ -51,7 +52,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="btn btn-link md:hidden btn-menu">
+                <li class="btn btn-link md:hidden btn-menu" id="menu_mobile">
                     <div class="btn-click magnetic" data-strength="20" data-strength-text="10">
                         <div class="btn-text">
                             <span class="btn-text-inner">Menu</span>
@@ -165,7 +166,7 @@
         </div>
     </div>
     <main>
-
+        <!-- Loading page home -->
         <div class="loading-container">
             <div class="loading-screen" style="top: calc(-100%);">
                 <div class="rounded-div-wrap top">
@@ -203,6 +204,8 @@
                 </div>
             </div>
         </div>
+        <!-- End page home -->
+
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
@@ -215,6 +218,7 @@
     integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- <script src="./assets/script/loader.js"></script> -->
+<script src="./assets/lib/locomotive-scroll.min.js"></script>
 <script src="./assets/script/btn-animation.js"></script>
 <script src="./assets/script/header.js"></script>
 

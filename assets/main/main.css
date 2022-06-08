@@ -44,6 +44,7 @@ flexbox
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body.fix {
@@ -87,10 +88,6 @@ h6 {
 button:focus,
 button {
   outline: none;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .btn-text {
@@ -362,11 +359,17 @@ body.nav-active {
 
 .btn-hamburger {
   position: fixed;
-  top: 10%;
-  right: 10%;
+  top: 2%;
+  right: 5%;
   transition: transform 0.4s cubic-bezier(0.36, 0, 0.66, 0);
   transform: translateY(0%) scale(0) rotate(0.001deg);
   z-index: 105;
+}
+@media (min-width: 768px) {
+  .btn-hamburger {
+    top: 10%;
+    right: 10%;
+  }
 }
 .btn-hamburger .btn-click,
 .btn-hamburger .btn-text {
@@ -433,7 +436,7 @@ body.nav-active {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -492,6 +495,12 @@ body.nav-active {
   transform: translate(calc(100% + 6vw), 0) rotate(0.001deg);
   transition: transform 0.8s cubic-bezier(0.7, 0, 0.2, 1);
   will-change: transform;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .fixed-nav {
+    width: auto;
+  }
 }
 .fixed-nav .fixed-nav-rounded-div {
   position: absolute;

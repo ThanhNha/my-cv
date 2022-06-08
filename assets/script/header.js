@@ -39,11 +39,11 @@ function menu_hamburger() {
       hamburger.removeClass("scrolled");
     }
   });
-  if (window.innerWidth < 768 && $(window).scrollTop() < 300) {
-    hamburger.click(function () {
-      this.classList.remove("scrolled");
-    });
-  }
+  // if (window.innerWidth < 768 && $(window).scrollTop() < 300) {
+  //   hamburger.click(function () {
+  //     this.classList.remove("scrolled");
+  //   });
+  // }
   hamburger.click(function () {
     this.classList.toggle("active");
     document.querySelector("body").classList.toggle("nav-active");

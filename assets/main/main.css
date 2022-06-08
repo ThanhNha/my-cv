@@ -719,7 +719,7 @@ body.nav-active {
   display: flex;
   align-items: center;
   color: black;
-  font-size: max(3em, 7vw);
+  font-size: max(3em, 9vw);
   pointer-events: none;
   margin: 0;
   padding: 0;

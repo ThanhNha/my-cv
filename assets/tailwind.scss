@@ -64,7 +64,7 @@ body {
 
 @screen lg {
   .h1 {
-    @apply text-[2.5rem] leading-[120%];
+    @apply text-[2.5rem] leading-[150%];
   }
 
   .h2 {
@@ -72,7 +72,7 @@ body {
   }
 
   .h3 {
-    @apply text-[1.5rem] leading-[120%];
+    @apply text-[1.5rem] leading-[150%];
   }
 
   .h4 {

@@ -32,18 +32,6 @@ function menu_hamburger() {
   var hamburger_mobile = $("#menu_mobile");
   var overlay = $(".overlay");
 
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-      hamburger.addClass("scrolled");
-    } else {
-      hamburger.removeClass("scrolled");
-    }
-  });
-  // if (window.innerWidth < 768 && $(window).scrollTop() < 300) {
-  //   hamburger.click(function () {
-  //     this.classList.remove("scrolled");
-  //   });
-  // }
   hamburger.click(function () {
     this.classList.toggle("active");
     document.querySelector("body").classList.toggle("nav-active");

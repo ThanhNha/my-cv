@@ -700,7 +700,6 @@ body.nav-active {
 #ss_2 {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
 }
 #ss_2 .big-name {
   position: absolute;
@@ -718,17 +717,58 @@ body.nav-active {
   position: relative;
   display: flex;
   align-items: center;
-  color: black;
-  font-size: max(3em, 9vw);
+  color: #221e40;
+  font-size: max(3em, 11vw);
   pointer-events: none;
   margin: 0;
   padding: 0;
   white-space: nowrap;
 }
+#ss_2 .big-name h1 .spacer {
+  padding: 0 3vw;
+}
 #ss_2 .big-name .name-h1 {
   position: relative;
   display: flex;
   width: 100%;
+}
+
+.JL {
+  z-index: 999;
+  position: absolute;
+  top: 19.5%;
+  font-family: "Nova Flat", cursive;
+  font-size: 7vw;
+  letter-spacing: 35px;
+  text-align: center;
+  user-select: none;
+}
+
+.img-container {
+  position: relative;
+  height: 95%;
+  width: 100%;
+  overflow: hidden;
+}
+.img-container .mask {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  transform-origin: bottom;
+}
+.img-container .img {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/2443590/pexels-photo-2443590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,7 +12,45 @@
 </head>
 
 <body>
-
+    <!-- Loading page home -->
+    <div class="loading-container">
+        <div class="loading-screen" style="top: calc(-100%);">
+            <div class="rounded-div-wrap top">
+                <div class="rounded-div"></div>
+            </div>
+            <div class="loading-words" style="transform: translate(0px, -50px); opacity: 0;">
+                <h2 class="home-active home-active-first">Xin Chào<div class="dot"></div>
+                </h2>
+                <h2 class="home-active ">Hello<div class="dot">
+                    </div>
+                </h2>
+                <h2 class="home-active">Bonjour<div class="dot"></div>
+                </h2>
+                <h2 class="home-active">स्वागत हे<div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Ciao<div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Olá<div class="dot"></div>
+                </h2>
+                <h2 class="home-active jap">おい<div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Hallå<div class="dot"></div>
+                </h2>
+                <h2 class="home-active">Guten tag<div class="dot"></div>
+                </h2>
+                <h2 class="home-active-last">Hallo<div class="dot"></div>
+                </h2>
+                <h2 class="active" style="display: none;">Home<div class="dot"></div>
+                </h2>
+                <h2>Styleguide<div class="dot"></div>
+                </h2>
+            </div>
+            <div class="rounded-div-wrap bottom" style="height: 0vh;">
+                <div class="rounded-div"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End page home -->
     <div class="btn btn-hamburger">
         <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
             <div class="btn-fill"></div>
@@ -116,8 +154,8 @@
             </div>
         </div>
     </div>
-    <main data-scroll-container class="main">
-        <header id="header" class="duration-300">
+    <main data-scroll-container class="main overflow-hidden">
+        <header id="header" data-scroll data-scroll-section>
             <div class="nav-bar flex justify-between py-5 md:px-5 px-2">
                 <div class="credits-top">
                     <div class="btn btn-link btn-left-top">
@@ -166,58 +204,84 @@
                     </li>
                 </ul>
             </div>
-        </header>
-        <!-- Loading page home -->
-        <div class="loading-container">
-            <div class="loading-screen" style="top: calc(-100%);">
-                <div class="rounded-div-wrap top">
-                    <div class="rounded-div"></div>
-                </div>
-                <div class="loading-words" style="transform: translate(0px, -50px); opacity: 0;">
-                    <h2 class="home-active home-active-first">Xin Chào<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active ">Hello<div class="dot">
+            <section id="ss_2">
+                <div class="big-name">
+                    <div class="name-h1 is-inview" destroy data-scroll data-scroll-direction="horizontal"
+                        data-scroll-speed="4" data-scroll-position="top">
+                        <div class="name-wrap">
+                            <h1 class="no-select once-in once-in-secondary">My name is Shin<span class="spacer">—</span>
+                            </h1>
                         </div>
-                    </h2>
-                    <h2 class="home-active">Bonjour<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active">स्वागत हे<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active">Ciao<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active">Olá<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active jap">おい<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active">Hallå<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active">Guten tag<div class="dot"></div>
-                    </h2>
-                    <h2 class="home-active-last">Hallo<div class="dot"></div>
-                    </h2>
-                    <h2 class="active" style="display: none;">Home<div class="dot"></div>
-                    </h2>
-                    <h2>Styleguide<div class="dot"></div>
-                    </h2>
+                    </div>
                 </div>
-                <div class="rounded-div-wrap bottom" style="height: 0vh;">
-                    <div class="rounded-div"></div>
+            </section>
+        </header>
+        <section id="services" class="relative py-60 bg-green-50 overflow-hidden" data-scroll-section>
+            <h2
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -skew-x-12 whitespace-nowrap text-6xl sm:text-9xl font-extrabold py-4">
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3"
+                    data-scroll-call="randomizeTextColor">S</span>
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2"
+                    data-scroll-call="randomizeTextColor">e</span>
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3"
+                    data-scroll-call="randomizeTextColor">r</span>
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2"
+                    data-scroll-call="randomizeTextColor">v</span>
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3"
+                    data-scroll-call="randomizeTextColor">i</span>
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2"
+                    data-scroll-call="randomizeTextColor">c</span>
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3"
+                    data-scroll-call="randomizeTextColor">e</span>
+                <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2"
+                    data-scroll-call="randomizeTextColor">s</span>
+            </h2>
+            <div class="transform rotate-6 skew-x-12">
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="20"
+                    data-scroll-target="#services">
+                    <span
+                        class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">Social
+                        Media — Email Marketing — Digital Advertising</span>
                 </div>
             </div>
-        </div>
-        <!-- End page home -->
-        <section id="ss_2">
-            <div class="big-name">
-                <div class="name-h1 is-inview" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="4"
-                    data-scroll-position="top">
-                    <div class="name-wrap">
-                        <h1 class="no-select once-in once-in-secondary">My name is Shin<span class="spacer">—</span>
-                        </h1>
-                    </div>
+            <div class="transform -rotate-6 -skew-x-12 mt-40">
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20"
+                    data-scroll-target="#services">
+                    <span class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">Web
+                        Development - Motion Design - Graphic Design</span>
                 </div>
             </div>
         </section>
-        <section id="ss_1">
+        <section id="contact" class="py-80 border-t-2 border-solid border-gray-50 overflow-hidden" data-scroll-section>
+            <div class="container px-5 mx-auto text-center">
+                <h2 class="span-lines text-2xl sm:text-5xl font-extrabold py-4" data-scroll data-scroll-repeat
+                    data-scroll-call="randomizeTextColor">
+                    <span class="inline-block span-line" data-scroll data-scroll-delay="0.15"
+                        data-scroll-speed="5">n</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.095" data-scroll-speed="5">h</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.085" data-scroll-speed="5">a</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.075" data-scroll-speed="5">t</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.065" data-scroll-speed="5">h</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.055" data-scroll-speed="5">a</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.045" data-scroll-speed="5">n</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.035" data-scroll-speed="5">h</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.035" data-scroll-speed="5">0</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.045" data-scroll-speed="5">2</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.055" data-scroll-speed="5">4</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.065" data-scroll-speed="5">@</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.075" data-scroll-speed="5">g</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.085" data-scroll-speed="5">m</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.095" data-scroll-speed="5">a</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.15" data-scroll-speed="5">i</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.20" data-scroll-speed="5">l</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.25" data-scroll-speed="5">.</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.30" data-scroll-speed="5">c</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.35" data-scroll-speed="5">o</span>
+                    <span class="inline-block" data-scroll data-scroll-delay="0.40" data-scroll-speed="5">m</span>
+                </h2>
+            </div>
+        </section>
+        <section id="ss_1" data-scroll-section>
             <div class="hero">
                 <div data-scroll data-scroll-speed="3" class="copy">
                     <blockquote>
@@ -231,7 +295,7 @@
                 </div>
                 <div class="image-wrapper">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fmonochrome-photo-of-woman-3410386.jpg?alt=media&token=112f9717-ef7e-46e1-8952-b3e346f8f008"
-                        alt="">
+                        alt="" class="lazy">
                 </div>
             </div>
 
@@ -256,28 +320,28 @@
 
                 <div class="images-container">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F666238d6f903c8899fa76789ed59912d.jpg?alt=media&token=fed407c6-a469-43cd-af23-5d7bb36c0f0e"
-                        alt="">
+                        alt="" class="lazy">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fbca413679414c189fdff16e15edd7726.jpg?alt=media&token=23dfcb96-b5b0-47ac-8105-e2c9a08c437b"
-                        alt="">
+                        alt="" class="lazy">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F24cf1a08cbaabf899d9d9872e20452b6.jpg?alt=media&token=7d44f884-e4dc-4775-b15d-001b9868de38"
-                        alt="">
+                        alt="" class="lazy">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F37ff280cdb9a9ff5a8aebb482a7c1b73.jpg?alt=media&token=611f6188-574c-4456-bdd1-c20b2e024b0a"
-                        alt="">
+                        alt="" class="lazy">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F81c20e1c1c9e380395bff6ff651fc2e7.jpg?alt=media&token=d0fa44b4-b518-4754-ae1d-929a08972c25"
-                        alt="">
+                        alt="" class="lazy">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fb4a0ce2c6d0e9ffd4792561e122bfb1e.jpg?alt=media&token=d32ec2b6-0902-4cb5-ae28-d22c87858407"
-                        alt="">
+                        alt="" class="lazy">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fd137584c758fd75b3191220df2934ce9.jpg?alt=media&token=34fcda56-27ea-43f5-a8c0-256783a053f8"
-                        alt="">
+                        alt="" class="lazy">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fmonochrome-photo-of-woman-covering-her-eye-2928525.jpg?alt=media&token=34786a3f-935d-4465-9d86-f837967e07cb"
-                        alt="">
+                        alt="" class="lazy">
                 </div>
             </div>
 
             <div class="section-3">
                 <div class="image-wrapper">
                     <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F0984c01ecccd4282d73a74962ea59889.jpg?alt=media&token=4b859d79-7055-4584-9c0a-b44a2cdd4e66"
-                        alt="">
+                        alt="" class="lazy">
                 </div>
                 <div class="copy">
                     <blockquote data-scroll-speed="3" data-scroll>
@@ -289,18 +353,15 @@
                     Explorations, ebinabo, 2020</p>
             </div>
         </section>
+
     </main>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
-    integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
-    integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./assets/script/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
+<!-- <script src="./assets/script/loader.js"></script> -->
+<script src="./assets/script/animation.js"></script>
 <script src="./assets/lib/locomotive-scroll.min.js"></script>
 <script src="./assets/script/btn-animation.js"></script>
 <script src="./assets/script/header.js"></script>

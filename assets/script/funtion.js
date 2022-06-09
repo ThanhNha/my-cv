@@ -34,4 +34,4 @@ function initLazyLoad() {
     elements_selector: ".lazy",
   });
 }
-initLazyLoad();
+// initLazyLoad();

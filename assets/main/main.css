@@ -54,8 +54,15 @@ main {
   box-sizing: border-box;
   overflow: hidden;
   width: 100vw;
-  position: fixed;
+  position: relative;
   height: 100%;
+}
+
+.main-wrapper {
+  box-sizing: border-box;
+  width: 100vw;
+  will-change: transform;
+  position: fixed;
 }
 
 body.fix {

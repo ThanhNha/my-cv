@@ -1,12 +1,21 @@
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+html,
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  background-color: $color-white;
+}
+main {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100vw;
+  position: fixed;
+  height: 100%;
 }
 body.fix {
   overflow: hidden;
 }
 body {
-  min-height: 3000px;
   box-sizing: border-box;
   // font-size: 16px !important;
   // line-height: 150%;

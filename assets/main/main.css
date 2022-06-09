@@ -42,9 +42,20 @@ flexbox
   font-display: swap;
   /* or block, swap, fallback, optional */
 }
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+html,
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  background-color: #fafafa;
+}
+
+main {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100vw;
+  position: fixed;
+  height: 100%;
 }
 
 body.fix {
@@ -52,7 +63,6 @@ body.fix {
 }
 
 body {
-  min-height: 3000px;
   box-sizing: border-box;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: auto !important;

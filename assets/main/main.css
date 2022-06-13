@@ -365,6 +365,7 @@ button {
     bottom: auto;
     right: 10%;
     transform: translateY(-50%);
+    left: auto;
   }
 }
 #job .job-name {

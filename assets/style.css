@@ -972,4 +972,14 @@ body {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
+  .xl\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }

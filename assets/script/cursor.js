@@ -113,6 +113,14 @@ function mouse_button() {
   $(".mouse-pos-list-image-wrap a").on("mouseleave", function () {
     $("#mouse-button").removeClass("active");
   });
+  // mobile
+  $(".work-mobile a").on("mouseenter", function () {
+    $("#mouse-button").addClass("active-mobile");
+  });
+  $(".work-mobile a").on("mouseleave", function () {
+    $("#mouse-button").removeClass("active-mobile");
+  });
+
   //span
 
   $(".mouse-pos-list-image-wrap a").on("mouseenter", function () {
@@ -120,6 +128,13 @@ function mouse_button() {
   });
   $(".mouse-pos-list-image-wrap a").on("mouseleave", function () {
     $("#mouse-span").removeClass("active");
+  });
+  //mobile
+  $(".work-mobile a").on("mouseenter", function () {
+    $("#mouse-span").addClass("active-mobile");
+  });
+  $(".work-mobile a").on("mouseleave", function () {
+    $("#mouse-span").removeClass("active-mobile");
   });
 
   $(".mouse-pos-list-image-wrap li.visible").on("mouseenter", function () {

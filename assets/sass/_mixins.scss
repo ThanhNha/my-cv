@@ -78,6 +78,13 @@ flexbox
   align-items: $y-align;
 }
 // Transition
+@mixin transition_cubic($what: all, $time: 0.6s, $how: cubic-bezier(0.7, 0, 0.2, 1)) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
+}
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
   -webkit-transition: $what $time $how;
   -moz-transition: $what $time $how;

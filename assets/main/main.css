@@ -226,13 +226,18 @@ button {
   z-index: 500;
   position: absolute;
   top: 23px;
-  right: 23px;
+  right: 0;
   width: 4.7em;
   height: 4.7em;
   transform: translate(0%, 0%);
   background: #8f8f8f;
   border-radius: 50%;
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  .digital-ball {
+    right: 23px;
+  }
 }
 .digital-ball .overlay {
   opacity: 0;
@@ -348,6 +353,20 @@ button {
   font-size: 0.75em;
 }
 
+#job {
+  position: absolute;
+  width: 100%;
+  left: 2%;
+  bottom: 10%;
+}
+@media (min-width: 992px) {
+  #job {
+    top: 40%;
+    bottom: auto;
+    right: 10%;
+    transform: translateY(-50%);
+  }
+}
 #job .job-name {
   font-size: 30px;
   line-height: 150%;

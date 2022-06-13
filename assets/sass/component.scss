@@ -41,7 +41,10 @@
   z-index: 500;
   position: absolute;
   top: 23px;
-  right: 23px;
+  right: 0;
+  @include desktop {
+    right: 23px;
+  }
   width: 4.7em;
   height: 4.7em;
   transform: translate(0%, 0%);
@@ -165,6 +168,16 @@
 }
 
 #job {
+  position: absolute;
+  width: 100%;
+  left: 2%;
+  bottom: 10%;
+  @include desktop {
+    top: 40%;
+    bottom: auto;
+    right: 10%;
+    transform: translateY(-50%);
+  }
   .job-name {
     font-size: 30px;
     line-height: 150%;

@@ -16,7 +16,10 @@ main {
   box-sizing: border-box;
   width: 100vw;
   will-change: transform;
-  position: fixed;
+  position: relative;
+  @include desktop {
+    position: fixed;
+  }
 }
 body.fix {
   overflow: hidden;

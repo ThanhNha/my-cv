@@ -62,7 +62,12 @@ main {
   box-sizing: border-box;
   width: 100vw;
   will-change: transform;
-  position: fixed;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .main-wrapper {
+    position: fixed;
+  }
 }
 
 body.fix {

@@ -45,7 +45,6 @@
   bottom: 20vh;
   left: auto;
   right: 5%;
-
   @include desktop {
     left: 0;
     top: 40%;
@@ -64,7 +63,7 @@
   }
   svg {
     display: none;
-    @include tablet {
+    @include desktop {
       display: block;
     }
   }

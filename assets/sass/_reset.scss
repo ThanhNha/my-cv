@@ -9,7 +9,7 @@ main {
   box-sizing: border-box;
   overflow: hidden;
   width: 100vw;
-  position: relative;
+  position: fixed;
   height: 100%;
 }
 .main-wrapper {
@@ -17,6 +17,7 @@ main {
   width: 100vw;
   will-change: transform;
   position: relative;
+  z-index: 1;
   @include desktop {
     position: fixed;
   }
@@ -26,14 +27,12 @@ body.fix {
 }
 body {
   box-sizing: border-box;
-  // font-size: 16px !important;
-  // line-height: 150%;
-  // font-family: $font-primary !important;
-  // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  color: black;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: grayscale !important;
   font-display: auto !important;
+  background: white;
 }
 ul {
   list-style: none;

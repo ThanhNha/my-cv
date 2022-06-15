@@ -125,19 +125,7 @@ function initScrollLetters() {
     return tl;
   }
 }
-function initScrolltriggerNav() {
-  ScrollTrigger.create({
-    start: "top -30%",
-    onUpdate: (self) => {
-      $(".btn-hamburger").addClass("scrolled");
-    },
-    onLeaveBack: () => {
-      $(".btn-hamburger").removeClass("scrolled");
-    },
-  });
-}
+
 initSmoothScroll();
 
 initScrollLetters();
-
-initScrolltriggerNav();

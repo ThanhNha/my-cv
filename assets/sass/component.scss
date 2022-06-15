@@ -195,3 +195,35 @@
     }
   }
 }
+// text animation scroll
+.span-lines.animate .span-line {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+//mouse main
+// #mouse-main {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   pointer-events: none;
+//   border-radius: 5px;
+//   z-index: 99999;
+//   transition: height 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045),
+//     width 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+// }
+// #mouse-main.cursor {
+//   background-color: white;
+//   backface-visibility: hidden;
+//   mix-blend-mode: difference;
+//   width: clamp(10px, 30px, 100px);
+//   height: clamp(10px, 30px, 100px);
+// }
+
+// .cursor.active {
+//   width: 100px;
+//   height: 100px;
+//   transform: rotate(0);
+//   border-radius: 100%;
+// }

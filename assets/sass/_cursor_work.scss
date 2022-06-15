@@ -1,3 +1,4 @@
+// mouse hover image
 .mouse-pos-list-image {
   &::before {
     display: block;
@@ -105,4 +106,39 @@
   width: clamp(30px, 50px, 80px);
   height: clamp(30px, 50px, 80px);
   transition: width 0.4s cubic-bezier(0.34, 1, 0.64, 1), height 0.4s cubic-bezier(0.34, 1, 0.64, 1);
+}
+#mouse-main {
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  width: 0;
+  left: 0;
+  height: 0;
+  transition: opacity 0.6s;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  .cursor-outer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 1px);
+    .cursor-inner {
+      background: #fff;
+      width: 0;
+      height: 0;
+      transform: scale(0.05) rotate(135deg);
+      opacity: 1;
+      transition: transform 0.6s, border-radius 1s, opacity 0.6s;
+      border-radius: 5px;
+    }
+    .cursor-inner.active {
+      width: clamp(9rem, 12rem, 15rem);
+      height: clamp(9rem, 12rem, 15rem);
+      transform: scale(0.5) rotate(-135deg);
+      border-radius: 100%;
+    }
+  }
 }

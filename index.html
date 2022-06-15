@@ -53,6 +53,13 @@
     <!-- End page home -->
     <main>
         <!-- Area Mouse Animations -->
+        <!-- <div class="mouser-main cursor" id="mouse-main">
+        </div> -->
+        <div class="cursor" id="mouse-main">
+            <div class="cursor-outer">
+                <div class="cursor-inner"></div>
+            </div>
+        </div>
         <div id="mouse-image" class="mouse-pos-list-image">
             <div class="mouse-pos-list-image-bounce overlay">
                 <div class="float-image-wrap">
@@ -239,42 +246,8 @@
                     </ul>
                 </div>
                 <!-- intro -->
-                <div id="intro">
-                    <div id="location" class="hanger">
-                        <p class="h3 text-white"><span>Located </span><span>in the <br> </span><span>Viet Nam</span>
-                        </p>
-                        <!--?xml version="1.0" encoding="UTF-8"?-->
-                        <svg width="300px" height="121px" viewBox="0 0 300 121" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>Combined Shape</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Artboard" transform="translate(0.000000, -366.000000)" fill="#1C1D20">
-                                    <g id="Group"
-                                        transform="translate(149.816828, 426.633657) rotate(90.000000) translate(-149.816828, -426.633657) translate(89.816828, 276.816828)">
-                                        <g id="Hanger"
-                                            transform="translate(60.000000, 149.816828) rotate(-90.000000) translate(-60.000000, -149.816828) translate(-89.816828, 89.816828)">
-                                            <path
-                                                d="M239.633657,0 C272.770742,1.0182436e-15 299.633657,26.862915 299.633657,60 C299.633657,93.137085 272.770742,120 239.633657,120 L0,120 L0,0 L239.633657,0 Z M239.633657,18.7755102 C216.866,18.7755102 198.409167,37.232343 198.409167,60 C198.409167,82.767657 216.866,101.22449 239.633657,101.22449 C262.401314,101.22449 280.858147,82.767657 280.858147,60 C280.858147,37.232343 262.401314,18.7755102 239.633657,18.7755102 Z"
-                                                id="Combined-Shape"></path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <div class="digital-ball">
-                            <div class="overlay"></div>
-                            <div class="globe">
-                                <div class="globe-wrap">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle-hor"></div>
-                                    <div class="circle-hor-middle"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="job">
+                <div id="intro" class="anim1">
+                    <div id="job" class="">
                         <div class="flex lg:justify-end items-center">
                             <div class="flex flex-col space-y-2">
                                 <div class="h2">
@@ -314,27 +287,10 @@
                         </div>
                     </div>
                     <!-- location -->
-                    <div id="location" class="hanger">
+                    <div id="location" class="hanger ">
                         <p class="h3 text-white"><span>Located </span><span>in the <br> </span><span>Viet Nam</span>
                         </p>
-                        <!--?xml version="1.0" encoding="UTF-8"?-->
-                        <svg width="300px" height="121px" viewBox="0 0 300 121" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>Combined Shape</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Artboard" transform="translate(0.000000, -366.000000)" fill="#1C1D20">
-                                    <g id="Group"
-                                        transform="translate(149.816828, 426.633657) rotate(90.000000) translate(-149.816828, -426.633657) translate(89.816828, 276.816828)">
-                                        <g id="Hanger"
-                                            transform="translate(60.000000, 149.816828) rotate(-90.000000) translate(-60.000000, -149.816828) translate(-89.816828, 89.816828)">
-                                            <path
-                                                d="M239.633657,0 C272.770742,1.0182436e-15 299.633657,26.862915 299.633657,60 C299.633657,93.137085 272.770742,120 239.633657,120 L0,120 L0,0 L239.633657,0 Z M239.633657,18.7755102 C216.866,18.7755102 198.409167,37.232343 198.409167,60 C198.409167,82.767657 216.866,101.22449 239.633657,101.22449 C262.401314,101.22449 280.858147,82.767657 280.858147,60 C280.858147,37.232343 262.401314,18.7755102 239.633657,18.7755102 Z"
-                                                id="Combined-Shape"></path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
+                        <div class="lg:block hidden"> <img src="./images/icon/hanger.svg" alt=""></div>
                         <div class="digital-ball">
                             <div class="overlay"></div>
                             <div class="globe">
@@ -350,6 +306,14 @@
                     </div>
                 </div>
             </header>
+
+            <section data-scroll-section>
+                <div class="container">
+                    <div class="py-4">
+                        <h4 class="span-lines animate h2">As the moon so beautiful</h4>
+                    </div>
+                </div>
+            </section>
             <section class="xl:block hidden work-grid large-work-grid" data-scroll-section>
                 <div class="container">
                     <div class="grid-sub-title">
@@ -413,7 +377,7 @@
             </section>
             <section class="xl:hidden block work-grid work-mobile" data-scroll-section>
                 <div class="container">
-                    <ul class="grid md:grid-cols-2 grid-cols-1  gap-[20px]">
+                    <ul class="grid md:grid-cols-2 grid-cols-1  gap-[20px] bg-white">
                         <li>
                             <a href="" class="flex flex-col space-y-[15px]">
                                 <div class=" bg-center bg-cover bg-no-repeat overflow-hidden before:content-[''] before:block before:pt-[100%] "
@@ -498,11 +462,11 @@
                         class="btn-text icon-social"><img src="./images/icon/phone.svg" alt="phone"></span></a>
                 <a target="_blank" href="https://zalo.me/shin-1401" data-strength="30" data-strength-text="10"
                     class="magnetic"><span class="btn-text icon-social"><img src="./images/icon/zalo.svg"
-                            alt="zalo"></span></a><img
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDUgMTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjAuNTcyNzU0IiB5PSIwLjUiIHdpZHRoPSIzIiBoZWlnaHQ9IjEwIiByeD0iMS41IiBmaWxsPSIjMjUyNDIyIiBzdHJva2U9IiNFQkU1RTAiLz4KPC9zdmc+Cg=="
-                    alt="social line" class="hidden mx-auto  md:block"> <a href="#" class="hidden md:block magnetic"
-                    data-strength=" 30" data-strength-text="10"><span class=" btn-text icon-social"><img
-                            src="./images/icon/contact.svg" alt="contact"></span></a>
+                            alt="zalo"></span></a>
+                <div class="hidden justify-center md:flex">
+                    <img src="./images/icon/span.svg" alt="">
+                </div> <a href="#" class="hidden md:block magnetic" data-strength=" 30" data-strength-text="10"><span
+                        class=" btn-text icon-social"><img src="./images/icon/contact.svg" alt="contact"></span></a>
             </div>
         </section>
     </footer>
@@ -513,11 +477,12 @@
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
 <!-- <script src="./assets/script/loader.js"></script> -->
 <script src="./assets/script/funtion.js"></script>
-<script src="./assets/script/animation.js"></script>
 <script src="./assets/lib/locomotive-scroll.min.js"></script>
 <script src="./assets/script/btn-animation.js"></script>
 <script src="./assets/script/cursor.js"></script>
 <script src="./assets/script/header.js"></script>
 <script src="./assets/script/scroll.js"></script>
+<script src="./assets/script/animation.js"></script>
+
 
 </html>

@@ -1,44 +1,14 @@
-const arrayOfColors = [
-  "#0a9396",
-  "#005f73",
-  "#ae2012",
-  "#3d405b",
-  "#003049",
-  "#bc6c25",
-  "#ff006e",
-  "#ef476f",
-  "#1982c4",
-  "#ee964b",
-  "#0ead69",
-  "#390099",
-  "#f6aa1c",
-  "#54101d",
-  "#2b2c28",
-  "#85c7f2",
-  "#e15a97",
-  "#2b70e3",
-  "#b36a5e",
-];
-function getRandomColor() {
-  const arrayLength = arrayOfColors.length;
-  const randomValue = Math.random() * arrayLength;
-  const roundedNumber = Math.floor(randomValue);
-  const color = arrayOfColors[roundedNumber];
-  return color;
-}
+gsap.registerPlugin(ScrollTrigger);
 
-function initLazyLoad() {
-  // https://github.com/locomotivemtl/locomotive-scroll/issues/225
-  // https://github.com/verlok/vanilla-lazyload
-  var lazyLoadInstance = new LazyLoad({
-    elements_selector: ".lazy",
-  });
-}
-initLazyLoad();
+let scroll;
+
+const body = document.body;
+const select = (e) => document.querySelector(e);
+const selectAll = (e) => document.querySelectorAll(e);
 
 function initSmoothScroll() {
   scroll = new LocomotiveScroll({
-    el: document.querySelector(".main"),
+    el: document.querySelector("[data-scroll-container]"),
     smooth: true,
     smartphone: {
       smooth: true,
@@ -62,7 +32,7 @@ function initSmoothScroll() {
 
   scroll.on("scroll", () => ScrollTrigger.update());
 
-  ScrollTrigger.scrollerProxy(".main", {
+  ScrollTrigger.scrollerProxy("[data-scroll-container]", {
     scrollTop(value) {
       return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.y;
     }, // we don't have to define a scrollLeft because we're only scrolling vertically.
@@ -70,18 +40,20 @@ function initSmoothScroll() {
       return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
     },
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-    pinType: document.querySelector(".main").style.transform ? "transform" : "fixed",
+    pinType: document.querySelector("[data-scroll-container]").style.transform
+      ? "transform"
+      : "fixed",
   });
 
   ScrollTrigger.defaults({
-    scroller: document.querySelector(".main"),
+    scroller: document.querySelector("[data-scroll-container]"),
   });
 
   /**
    * Remove Old Locomotive Scrollbar
    */
 
-  const scrollbar = document.querySelectorAll(".c-scrollbar");
+  const scrollbar = selectAll(".c-scrollbar");
 
   if (scrollbar.length > 1) {
     scrollbar[0].remove();
@@ -93,20 +65,20 @@ function initSmoothScroll() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 }
-
 function initScrollLetters() {
   // Scrolling Letters Both Direction
   // https://codepen.io/GreenSock/pen/rNjvgjo
   // Fixed example with resizing
   // https://codepen.io/GreenSock/pen/QWqoKBv?editors=0010
-  gsap.registerPlugin(ScrollTrigger);
 
   let direction = 1; // 1 = forward, -1 = backward scroll
 
-  const roll1 = roll(".big-name .name-wrap", { duration: 20 }),
+  const roll1 = roll(".big-name .name-wrap", { duration: 18 }),
     roll2 = roll(".rollingText02", { duration: 10 }, true),
     scroll = ScrollTrigger.create({
-      trigger: document.querySelector(".main"),
+      trigger: document.querySelector("[data-scroll-container]"),
+      scroller: document.querySelector("[data-scroll-container]"),
+      // markers: true,
       onUpdate(self) {
         if (self.direction !== direction) {
           direction *= -1;
@@ -153,7 +125,6 @@ function initScrollLetters() {
     return tl;
   }
 }
-
 function initScrolltriggerNav() {
   ScrollTrigger.create({
     start: "top -30%",
@@ -165,9 +136,8 @@ function initScrolltriggerNav() {
     },
   });
 }
+initSmoothScroll();
 
 initScrollLetters();
-
-initSmoothScroll();
 
 initScrolltriggerNav();

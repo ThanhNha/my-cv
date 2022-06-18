@@ -44,16 +44,22 @@ body.nav-active {
   transform: translateX(2.8em);
   white-space: nowrap;
 }
-
-.btn-link .btn-text {
-  padding: 0 calc(clamp(1.5em, 4vw, 2.5em) / 2);
-  position: relative;
+header {
+  .btn-link .btn-text {
+    padding: 0 calc(clamp(1.5em, 4vw, 2.5em) / 2);
+    position: relative;
+  }
+  .btn-link .btn-click {
+    border: 0;
+    // height: 2.75em;
+    border-radius: 0;
+    overflow: visible;
+  }
 }
-.btn-link .btn-click {
-  border: 0;
-  height: 2.75em;
-  border-radius: 0;
-  overflow: visible;
+#sidebar-menu {
+  .btn-click {
+    height: auto;
+  }
 }
 
 //menu hambuger

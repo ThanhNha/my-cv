@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="overlay fixed-nav-back"></div>
-        <div class="fixed-nav theme-dark">
+        <div id="sidebar-menu" class="fixed-nav theme-dark">
             <div class="fixed-nav-rounded-div">
                 <div class="rounded-div-wrap">
                     <div class="rounded-div"></div>
@@ -120,14 +120,14 @@
             </div>
             <div class="fixed-nav-inner">
                 <div class="row nav-row">
-                    <h5 class="h2">Navigation</h5>
+                    <h5 class="h2 text-gray-400">Navigation</h5>
                     <div class="stripe"></div>
-                    <ul class="links-wrap">
+                    <ul class="flex flex-col space-y-2">
                         <li class="btn btn-link active">
                             <a href="#" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                                 <span class=" btn-text">
                                     <span
-                                        class="btn-text-inner lg:text-[40px] text-white md:text-[36px] text-[30px]">Home</span>
+                                        class="btn-text-inner text-white lg:text-[60px] leading-[120%] md:text-[50px] text-[35px]">Home</span>
                                 </span>
                             </a>
                         </li>
@@ -135,7 +135,7 @@
                             <a href="#/work" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                                 <span class=" btn-text">
                                     <span
-                                        class="btn-text-inner lg:text-[40px] text-white md:text-[36px] text-[30px] ">Work</span>
+                                        class="btn-text-inner text-white lg:text-[60px] lg:leading-[120%] md:text-[50px] text-[35px] ">Work</span>
                                 </span>
                             </a>
                         </li>
@@ -143,7 +143,7 @@
                             <a href="#/about" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                                 <span class=" btn-text">
                                     <span
-                                        class="btn-text-inner lg:text-[40px] text-white md:text-[36px] text-[30px] ">About</span>
+                                        class="btn-text-inner text-white lg:text-[60px] lg:leading-[120%] md:text-[50px] text-[35px] ">About</span>
                                 </span>
                             </a>
                         </li>
@@ -151,7 +151,7 @@
                             <a href="#/contact" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                                 <span class=" btn-text">
                                     <span
-                                        class="btn-text-inner lg:text-[40px] text-white md:text-[36px] text-[30px] ">Contact</span>
+                                        class="btn-text-inner text-white lg:text-[60px] lg:leading-[120%] md:text-[50px] text-[35px] ">Contact</span>
                                 </span>
                             </a>
                         </li>
@@ -160,32 +160,29 @@
                 <div class="row social-row">
                     <div class="stripe"></div>
                     <div class="socials">
-                        <h5 class="h2">Socials</h5>
-                        <ul>
+                        <h5 class="h2 text-gray-400">Socials</h5>
+                        <ul class="flex items-center justify-between">
                             <li class="btn btn-link btn-link-external">
-                                <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank"
+                                <a href="https://www.facebook.com/nhathanh024/" target="_blank"
                                     class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                     <span class="btn-text">
-                                        <span
-                                            class="btn-text-inner lg:text-[40px] text-white md:text-[36px] text-[30px] ">Awwwards</span>
+                                        <span class="btn-text-inner text-white p1 ">Facebook</span>
                                     </span>
                                 </a>
                             </li>
                             <li class="btn btn-link btn-link-external">
-                                <a href="https://www.instagram.com/codebydennis/" target="_blank"
+                                <a href="https://www.instagram.com/_nha_thanh_/" target="_blank"
                                     class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                     <span class="btn-text">
-                                        <span
-                                            class="btn-text-inner lg:text-[40px] text-white md:text-[36px] text-[30px] ">Instagram</span>
+                                        <span class="btn-text-inner text-white p1 ">Instagram</span>
                                     </span>
                                 </a>
                             </li>
                             <li class="btn btn-link btn-link-external">
-                                <a href="https://dribbble.com/dennissnellenberg" target="_blank"
-                                    class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                <a href="https://zalo.me/shin-1401" target="_blank" class="btn-click magnetic"
+                                    data-strength="20" data-strength-text="10">
                                     <span class="btn-text">
-                                        <span
-                                            class="btn-text-inner lg:text-[40px] text-white md:text-[36px] text-[30px] ">Dribbble</span>
+                                        <span class="btn-text-inner text-white p1 ">Zalo</span>
                                     </span>
                                 </a>
                             </li>
@@ -271,8 +268,9 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <span class="job-name text-violet-500">Wordpress</span>
-                                <span class="job-name  text-violet-500">Front End Developer</span>
+                                <span class="job-name text-violet-500">Frontend</span>
+                                <span class="job-name  text-violet-500">Wordpress</span>
+                                <span class="job-name  text-violet-500">Vue JS</span>
                             </div>
                         </div>
                     </div>
@@ -306,17 +304,26 @@
                     </div>
                 </div>
             </header>
-
-            <section data-scroll-section>
+            <section data-scroll-section class="lg:py-40 md:py-20 py-10">
                 <div class="container">
-                    <div class="py-4">
-                        <h4 class="span-lines animate h2">As the moon so beautiful</h4>
+                    <div class="py-4 grid md:grid-cols-3 grid-cols-2 lg:gap-8 md:gap-6 gap-4">
+                        <div class="md:col-span-2 col-span-1">
+                            <h4 class="span-lines animate h2">Always learn, learn new technologies, new languages.
+                                Improve my own understanding.</h4>
+                        </div>
+                        <div class="col-span-1">
+                            <h4 class="p2 pt-4">Goal try to master Front-End within 2 year. Become a
+                                fullstack developer.
+
+                            </h4>
+                        </div>
+
                     </div>
                 </div>
             </section>
             <section class="xl:block hidden work-grid large-work-grid" data-scroll-section>
                 <div class="container">
-                    <div class="grid-sub-title">
+                    <div class="sub-title">
                         <div class="flex-col">
                             <h1 class="h1 text-violet-500 font-bold">Recent work</h1>
                         </div>
@@ -418,37 +425,69 @@
                     </a>
                 </div>
             </section>
-            <section id="contact" class="py-40 border-t-2 border-solid border-gray-50 overflow-hidden"
+            <section id="contact" class="lg:py-40 py-20 border-t-2 border-solid border-gray-50 overflow-hidden"
                 data-scroll-section>
-
                 <div class="container px-5 mx-auto text-center">
                     <h2 class="span-lines text-2xl sm:text-5xl font-extrabold py-4" data-scroll data-scroll-repeat
                         data-scroll-call="randomizeTextColor">
                         <span class="inline-block span-line" data-scroll data-scroll-delay="0.15"
-                            data-scroll-speed="5">n</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.095" data-scroll-speed="5">h</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.085" data-scroll-speed="5">a</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.075" data-scroll-speed="5">t</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.065" data-scroll-speed="5">h</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.055" data-scroll-speed="5">a</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.045" data-scroll-speed="5">n</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.035" data-scroll-speed="5">h</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.035" data-scroll-speed="5">0</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.045" data-scroll-speed="5">2</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.055" data-scroll-speed="5">4</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.065" data-scroll-speed="5">@</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.075" data-scroll-speed="5">g</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.085" data-scroll-speed="5">m</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.095" data-scroll-speed="5">a</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.15" data-scroll-speed="5">i</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.20" data-scroll-speed="5">l</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.25" data-scroll-speed="5">.</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.30" data-scroll-speed="5">c</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.35" data-scroll-speed="5">o</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.40" data-scroll-speed="5">m</span>
+                            data-scroll-speed="2">M</span>
+                        <span class="inline-block" data-scroll data-scroll-delay="0.095" data-scroll-speed="2">y</span>
+                        <span class="inline-block" data-scroll data-scroll-delay="0.085"
+                            data-scroll-speed="2">&nbsp;</span>
+                        <span class="inline-block" data-scroll data-scroll-delay="0.075" data-scroll-speed="2">S</span>
+                        <span class="inline-block" data-scroll data-scroll-delay="0.065" data-scroll-speed="2">k</span>
+                        <span class="inline-block" data-scroll data-scroll-delay="0.055" data-scroll-speed="2">i</span>
+                        <span class="inline-block" data-scroll data-scroll-delay="0.045" data-scroll-speed="2">l</span>
+                        <span class="inline-block" data-scroll data-scroll-delay="0.035" data-scroll-speed="2">l</span>
                     </h2>
                 </div>
             </section>
+            <section class="overflow-hidden" data-scroll-section>
+                <div class="flex flex-col items-center justify-center space-y-4 w-full">
+                    <div class="flex-1 grid grid-cols-12 lg:gap-8 md:gap-6 gap-4 w-[120vw] left-[-10vw]" data-scroll
+                        data-scroll-speed="-2" data-scroll-direction="horizontal">
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-gray-200"><img src="./images/language/html.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-slate-300"><img src="./images/language/css.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-gray-200"><img src="./images/language/js.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-gray-300"><img src="./images/language/jquery.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="flex-1 grid grid-cols-12 lg:gap-8 md:gap-6 gap-4 w-[120vw] left-[-10vw]" data-scroll
+                        data-scroll-speed="2" data-scroll-direction="horizontal">
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-gray-300"><img src="./images/language/vue1.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-gray-200"><img src="./images/language/mysql.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-slate-300"><img src="./images/language/php.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+                        <div class="lg:col-span-3 md:col-span-4 col-span-6">
+                            <div class="aspect-w-3 aspect-h-2 bg-gray-200"><img src="./images/language/wp.png"
+                                    class="picture-cover object-contain" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
         </div>
 
     </main>

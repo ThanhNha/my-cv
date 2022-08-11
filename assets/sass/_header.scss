@@ -68,8 +68,8 @@ header {
   top: 2%;
   right: 5%;
   @include tablet {
-    top: 10%;
-    right: 10%;
+    top: 5%;
+    right: 5%;
   }
   transition: transform 0.4s cubic-bezier(0.36, 0, 0.66, 0);
   transform: translateY(0%) scale(0) rotate(0.001deg);

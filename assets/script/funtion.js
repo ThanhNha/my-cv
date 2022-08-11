@@ -1,24 +1,4 @@
-const arrayOfColors = [
-  "#0a9396",
-  "#005f73",
-  "#ae2012",
-  "#3d405b",
-  "#003049",
-  "#bc6c25",
-  "#ff006e",
-  "#ef476f",
-  "#1982c4",
-  "#ee964b",
-  "#0ead69",
-  "#390099",
-  "#f6aa1c",
-  "#54101d",
-  "#2b2c28",
-  "#85c7f2",
-  "#e15a97",
-  "#2b70e3",
-  "#b36a5e",
-];
+const arrayOfColors = ["#0a9396", "#221e40", "#9394a9", "#4ec1bc"];
 function getRandomColor() {
   const arrayLength = arrayOfColors.length;
   const randomValue = Math.random() * arrayLength;

@@ -62,7 +62,7 @@
         </div>
         <div id="mouse-image" class="mouse-pos-list-image">
             <div class="mouse-pos-list-image-bounce overlay">
-                <div class="float-image-wrap">
+                <ul class="float-image-wrap jobs-list-view">
                     <li class="mouse-pos-list-image-inner visible">
                         <div class="overlay overlay-image lazy entered loaded bg-center bg-cover bg-no-repeat"
                             style="background-color: rgb(220, 208, 194); background-image: url(&quot;./images/work/work-4.jpg&quot;);"
@@ -73,17 +73,7 @@
                             style="background-color: rgb(226, 209, 217); background-image: url(&quot;./images/work/work-2.jpg&quot;);"
                             data-bg="./images/work/work-2.jpg" data-ll-status="loaded"></div>
                     </li>
-                    <li class="mouse-pos-list-image-inner visible">
-                        <div class="overlay overlay-image lazy entered loaded bg-center bg-cover bg-no-repeat"
-                            style="background-color: rgb(177, 169, 148); background-image: url(&quot;./images/work/work-3.jpg&quot;);"
-                            data-bg="./images/work/work-3.jpg" data-ll-status="loaded"></div>
-                    </li>
-                    <li class="mouse-pos-list-image-inner visible">
-                        <div class="overlay overlay-image lazy entered loaded bg-center bg-cover bg-no-repeat"
-                            style="background-color: rgb(55, 55, 55); background-image: url(&quot;./images/work/work-1.jpg&quot;);"
-                            data-bg="./images/work/work-1.jpg" data-ll-status="loaded"></div>
-                    </li>
-                </div>
+                </ul>
             </div>
         </div>
         <div id="mouse-button" class="mouse-button">
@@ -193,7 +183,7 @@
             </div>
         </div>
         <div class="main-wrapper main" data-scroll-container>
-            <header id="header" data-scroll data-scroll-section>
+            <header id="header" class="bg-white" data-scroll data-scroll-section>
                 <div class="nav-bar flex justify-between py-5 md:px-5 px-2">
                     <div class="credits-top">
                         <div class="btn btn-link btn-left-top">
@@ -286,8 +276,9 @@
                     </div>
                     <!-- location -->
                     <div id="location" class="hanger ">
-                        <p class="h3 text-white"><span>Located </span><span>in the <br> </span><span>Viet Nam</span>
-                        </p>
+                        <a href="#" class="h3 block text-white"><span>Down load </span><span> CV <br>
+                            </span><span>Here</span>
+                        </a>
                         <div class="lg:block hidden"> <img src="./images/icon/hanger.svg" alt=""></div>
                         <div class="digital-ball">
                             <div class="overlay"></div>
@@ -304,7 +295,7 @@
                     </div>
                 </div>
             </header>
-            <section data-scroll-section class="lg:py-40 md:py-20 py-10">
+            <section data-scroll-section class="lg:py-30 md:py-20 py-10">
                 <div class="container">
                     <div class="py-4 grid md:grid-cols-3 grid-cols-2 lg:gap-8 md:gap-6 gap-4">
                         <div class="md:col-span-2 col-span-1">
@@ -328,11 +319,11 @@
                             <h1 class="h1 text-violet-500 font-bold">Recent work</h1>
                         </div>
                     </div>
-                    <ul class="flex flex-col mouse-pos-list-image-wrap">
-                        <li class="visible">
+                    <ul class="flex flex-col mouse-pos-list-image-wrap job-list">
+                        <li data-scroll class="visible">
                             <div class="h-[1px] w-full bg-gray-300 pointer-events-none"></div>
-                            <a class="xl:py-10 md:py-3 xl:px-10 md:px-7 duration-300 hover:px-8 hover:text-gray-500 flex justify-between items-center"
-                                href="#">
+                            <a href="#jobs"
+                                class="job-item xl:py-10 md:py-3 xl:px-10 md:px-7 duration-300 hover:px-8 hover:text-gray-500 flex justify-between items-center">
                                 <div class="flex-col">
                                     <h4 class="h2"><span>Future Goals</span></h4>
                                 </div>
@@ -341,10 +332,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="visible">
+                        <li data-scroll class="visible">
                             <div class="h-[1px] w-full bg-gray-300 pointer-events-none"></div>
-                            <a class="xl:py-10 md:py-3 xl:px-10 md:px-7 duration-300 hover:px-8 hover:text-gray-500 flex justify-between items-center"
-                                href="#">
+                            <a href="#jobs"
+                                class="job-item xl:py-10 md:py-3 xl:px-10 md:px-7 duration-300 hover:px-8 hover:text-gray-500 flex justify-between items-center">
                                 <div class="flex-col">
                                     <h4 class="h2"><span>Future Goals</span></h4>
                                 </div>
@@ -353,32 +344,44 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="visible">
-                            <div class="h-[1px] w-full bg-gray-300 pointer-events-none"></div>
-                            <a class="xl:py-10 md:py-3 xl:px-10 md:px-7 duration-300 hover:px-8 hover:text-gray-500 flex justify-between items-center"
-                                href="#">
-                                <div class="flex-col">
-                                    <h4 class="h2"><span>Future Goals</span></h4>
-                                </div>
-                                <div class="flex-col animate">
-                                    <p>Interaction &amp; Development</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="visible">
-                            <div class="h-[1px] w-full bg-gray-300 pointer-events-none"></div>
-                            <a class="xl:py-10 md:py-3 xl:px-10 md:px-7 duration-300 hover:px-8 hover:text-gray-500 flex justify-between items-center"
-                                href="#">
-                                <div class="flex-col">
-                                    <h4 class="h2"><span>Future Goals</span></h4>
-                                </div>
-                                <div class="flex-col animate">
-                                    <p>Interaction &amp; Development</p>
-                                </div>
-                            </a>
-                        </li>
-
                         <div class="h-[1px] w-full bg-gray-300 pointer-events-none"></div>
+                    </ul>
+                    <ul class="job-list-detail lg:w-[80%] w-full">
+                        <li class="">
+                            <div class="flex lg:flex-row flex-col justify-between">
+                                <div class="flex-1">Name 1
+                                    <div class="flex mt-[25px] gap-[20px]"><a
+                                            href="https://www.npmjs.com/package/react-cssfx-loading" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="h-[45px] px-[15px] text-white rounded transition duration-300 flex items-center gap-[10px] bg-[#1876d2] hover:bg-[#2884e0]"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="25" width="25"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
+                                                <path
+                                                    d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z">
+                                                </path>
+                                            </svg><span> Live Demo</span></a><a
+                                            href="https://github.com/napthedev/react-cssfx-loading.git" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="h-[45px] px-[15px] text-white rounded transition duration-300 flex items-center gap-[10px] bg-[#1b222b] hover:bg-[#191e25]"><svg
+                                                stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 496 512" height="25" width="25"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                                </path>
+                                            </svg><span> View Github</span></a></div>
+                                </div>
+                                <div class="flex-1"><img src="./images/work/work-2.jpg" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="flex lg:flex-row flex-col justify-between">
+                                <div class="flex-1">Name 2</div>
+                                <div class="flex-1"><img src="./images/work/work-2.jpg" alt=""></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -425,27 +428,32 @@
                     </a>
                 </div>
             </section>
-            <section id="contact" class="lg:py-40 py-20 border-t-2 border-solid border-gray-50 overflow-hidden"
-                data-scroll-section>
-                <div class="container px-5 mx-auto text-center">
-                    <h2 class="span-lines text-2xl sm:text-5xl font-extrabold py-4" data-scroll data-scroll-repeat
-                        data-scroll-call="randomizeTextColor">
-                        <span class="inline-block span-line" data-scroll data-scroll-delay="0.15"
-                            data-scroll-speed="2">M</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.095" data-scroll-speed="2">y</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.085"
-                            data-scroll-speed="2">&nbsp;</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.075" data-scroll-speed="2">S</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.065" data-scroll-speed="2">k</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.055" data-scroll-speed="2">i</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.045" data-scroll-speed="2">l</span>
-                        <span class="inline-block" data-scroll data-scroll-delay="0.035" data-scroll-speed="2">l</span>
-                    </h2>
+            <section id="skill" class="overflow-hidden py-[50px]" data-scroll-section>
+                <div class="py-20 overflow-hidden">
+                    <div class="container px-5 mx-auto text-center">
+                        <h1 class="span-lines h1 font-bold" data-scroll data-scroll-repeat
+                            data-scroll-call="randomizeTextColor">
+                            <span class="inline-block span-line" data-scroll data-scroll-delay="0.15"
+                                data-scroll-speed="2">M</span>
+                            <span class="inline-block" data-scroll data-scroll-delay="0.095"
+                                data-scroll-speed="2">y</span>
+                            <span class="inline-block" data-scroll data-scroll-delay="0.085"
+                                data-scroll-speed="2">&nbsp;</span>
+                            <span class="inline-block" data-scroll data-scroll-delay="0.075"
+                                data-scroll-speed="2">S</span>
+                            <span class="inline-block" data-scroll data-scroll-delay="0.065"
+                                data-scroll-speed="2">k</span>
+                            <span class="inline-block" data-scroll data-scroll-delay="0.055"
+                                data-scroll-speed="2">i</span>
+                            <span class="inline-block" data-scroll data-scroll-delay="0.045"
+                                data-scroll-speed="2">l</span>
+                            <span class="inline-block" data-scroll data-scroll-delay="0.035"
+                                data-scroll-speed="2">l</span>
+                        </h1>
+                    </div>
                 </div>
-            </section>
-            <section class="overflow-hidden" data-scroll-section>
-                <div class="flex flex-col items-center justify-center space-y-4 w-full">
-                    <div class="flex-1 grid grid-cols-12 lg:gap-8 md:gap-6 gap-4 w-[120vw] left-[-10vw]" data-scroll
+                <div class="flex flex-col items-center justify-center space-y-4 w-[80%] mx-auto ">
+                    <div class="w-full grid grid-cols-12 lg:gap-8 md:gap-6 gap-4 left-[-10vw]" data-scroll
                         data-scroll-speed="-2" data-scroll-direction="horizontal">
                         <div class="lg:col-span-3 md:col-span-4 col-span-6">
                             <div class="aspect-w-3 aspect-h-2 bg-gray-200"><img src="./images/language/html.png"
@@ -465,7 +473,7 @@
                         </div>
 
                     </div>
-                    <div class="flex-1 grid grid-cols-12 lg:gap-8 md:gap-6 gap-4 w-[120vw] left-[-10vw]" data-scroll
+                    <div class="w-full grid grid-cols-12 lg:gap-8 md:gap-6 gap-4 left-[-10vw]" data-scroll
                         data-scroll-speed="2" data-scroll-direction="horizontal">
                         <div class="lg:col-span-3 md:col-span-4 col-span-6">
                             <div class="aspect-w-3 aspect-h-2 bg-gray-300"><img src="./images/language/vue1.png"
@@ -487,7 +495,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
 
     </main>

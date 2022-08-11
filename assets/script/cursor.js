@@ -200,6 +200,30 @@ function mouse_main() {
   //   }
   // });
 }
+
+function active_job_modal() {
+  let jobs = document.querySelectorAll(".job-list li");
+  let jobs_detail = document.querySelectorAll(".job-list-detail li");
+  let overlay = $(".fixed-nav-back");
+
+  jobs.forEach((element, i) => {
+    element.addEventListener("click", function () {
+      $(".job-list-detail li").removeClass("active");
+      jobs_detail[i].classList.add("active");
+      // if ($(".job-list-detail li").hasClass("active")) {
+      //   overlay.addClass("active");
+      // } else {
+      //   overlay.removeClass("active");
+      // }
+    });
+  });
+  $(document).on("click", function (e) {
+    if ($(e.target).closest(".job-list").length === 0) {
+      $(".job-list-detail li").removeClass("active");
+    }
+  });
+}
+active_job_modal();
 mouse_main();
 mouse_button();
 mouse_image();

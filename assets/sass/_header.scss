@@ -225,6 +225,10 @@ header {
   opacity: 0.35;
   pointer-events: all;
 }
+.fixed-nav-back.active {
+  opacity: 0.35;
+  pointer-events: all;
+}
 .nav-active .fixed-nav {
   transform: translate(0, 0) rotate(0.001deg);
 }

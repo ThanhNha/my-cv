@@ -427,9 +427,9 @@ button {
 #jobs-detail .job-list-detail li {
   padding: 20px 50px;
   width: 100%;
-  background: #9394a9;
+  background: #221e40;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 0;
   cursor: pointer;
   transform: scale(0);

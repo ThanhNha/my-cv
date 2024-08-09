@@ -31,7 +31,7 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           body-path: './.github/pull_request_template.md'
           branch: ${{ github.ref }}
-          base: master
+          base: main
           # reviewers: ThanhNha
           delete-branch: true
       - name: Check outputs

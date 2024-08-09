@@ -11,7 +11,7 @@ permissions:
 on:
   push:
     branches:
-      - update-*
+      - shin
       - main
 jobs:
   create-pull-request:

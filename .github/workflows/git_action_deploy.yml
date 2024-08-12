@@ -19,7 +19,7 @@ jobs:
         uses: SamKirkland/web-deploy@v1
 
         with:
-          target-server: theshin.online
+          target-server: 82.180.152.249
           remote-user: u796998893
           private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: 65002

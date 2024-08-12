@@ -14,7 +14,11 @@ jobs:
     steps:
       - name: 🚚 Get Latest Code
         uses: actions/checkout@v3
-        
+
+      - name: check ssh key
+        run: |
+          echo "SSH_KEY is ${{ secrets.SSH_KEY }}"
+
       - name: 📂 Sync Files
         uses: SamKirkland/web-deploy@v1
 
@@ -24,4 +28,3 @@ jobs:
           private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: 65002
           destination-path: ~/public_html/shin/
-

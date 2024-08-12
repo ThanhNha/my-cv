@@ -23,4 +23,4 @@ jobs:
           server: ftp.theshin.online
           username: u796998893
           password: Iuvklun024@
-          server-dir: /home/u796998893/domains/theshin.online/public_html/shin/
+          server-dir: public_html/shin/

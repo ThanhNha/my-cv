@@ -21,6 +21,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.theshin.online
-          username: u796998893.shin150101
+          username: u796998893
           password: Iuvklun024@
           server-dir: /home/u796998893/domains/theshin.online/public_html/shin/

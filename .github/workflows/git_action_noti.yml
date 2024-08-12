@@ -12,7 +12,7 @@ on:
   push:
     branches:
       - shin
-      - main
+      # - main
 jobs:
   create-pull-request:
     runs-on: ubuntu-latest

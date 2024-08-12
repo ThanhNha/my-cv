@@ -4,7 +4,7 @@ run-name: FCS Wordpress GitHub Actions 🚀
 on:
   push:
     branches:
-      - shin
+      # - shin
       - main
 
 jobs:
@@ -23,4 +23,4 @@ jobs:
           server: ftp.theshin.online
           username: u796998893
           password: Iuvklun024@
-          server-dir: public_html/shin/
+          server-dir: shin/

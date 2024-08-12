@@ -4,7 +4,7 @@ run-name: FCS Wordpress GitHub Actions 🚀
 on:
   push:
     branches:
-      # - shin
+      - shin
       - main
 
 jobs:
@@ -19,12 +19,12 @@ jobs:
         run: |
           echo "SSH_KEY is ${{ secrets.SSH_KEY }}"
 
-      - name: 📂 Sync Files
-        uses: SamKirkland/web-deploy@v1
+      # - name: 📂 Sync Files
+      #   uses: SamKirkland/web-deploy@v1
 
-        with:
-          target-server: 82.180.152.249
-          remote-user: u796998893
-          private-ssh-key: ${{ secrets.SSH_KEY }}
-          ssh-port: 65002
-          destination-path: ~/public_html/shin/
+      #   with:
+      #     target-server: 82.180.152.249
+      #     remote-user: u796998893
+      #     private-ssh-key: ${{ secrets.SSH_KEY }}
+      #     ssh-port: 65002
+      #     destination-path: ~/public_html/shin/

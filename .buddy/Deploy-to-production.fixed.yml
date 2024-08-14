@@ -24,3 +24,11 @@
     server_key: "secure!SWJz70Nur3p/Jo6fms193A==.AiFssoaUnteYPqpbj70urQ=="
     env_key: "secure!uq10i8yEBqsnDf54mcfBuw==.uU1v2qZRx45jHhVhrKxRsw=="
     passphrase: "secure!hgvHG+Tpq9Di3ZTPnubyHQ==.xJWKiheE/t1DOhEh1Bm59Q=="
+  - action: "Send notification to Telegram Channel"
+    type: "TELEGRAM"
+    content: "[#$BUDDY_EXECUTION_ID] $BUDDY_PIPELINE_NAME run by [$BUDDY_TRIGGERING_ACTOR]($BUDDY_TRIGGERING_ACTOR_URL)"
+    integration: "7EKz9qJ38bj9xe3AORZm2PQ4A1"
+    trigger_conditions:
+    - trigger_condition: "SUCCESS_PIPELINE"
+      trigger_project_name: "my-cv"
+      trigger_pipeline_name: "Deploy to production"

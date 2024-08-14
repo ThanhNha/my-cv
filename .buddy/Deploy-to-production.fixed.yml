@@ -4,3 +4,14 @@
     refs:
     - "refs/heads/main"
   fail_on_prepare_env_warning: true
+  actions:
+  - action: "Transfer to 82.180.152.249"
+    type: "SFTP"
+    local_path: "/"
+    login: "u796998893"
+    password: "secure!hgvHG+Tpq9Di3ZTPnubyHQ==.xJWKiheE/t1DOhEh1Bm59Q=="
+    host: "82.180.152.249"
+    port: "65002"
+    server_key: "secure!SWJz70Nur3p/Jo6fms193A==.AiFssoaUnteYPqpbj70urQ=="
+    env_key: "secure!uq10i8yEBqsnDf54mcfBuw==.uU1v2qZRx45jHhVhrKxRsw=="
+    passphrase: "secure!hgvHG+Tpq9Di3ZTPnubyHQ==.xJWKiheE/t1DOhEh1Bm59Q=="

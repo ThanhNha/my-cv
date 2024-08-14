@@ -1,4 +1,4 @@
-- pipeline: "Deploy to production"
+- pipeline: "Test Deploy action"
   events:
   - type: "PUSH"
     refs:

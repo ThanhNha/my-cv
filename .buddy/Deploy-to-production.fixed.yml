@@ -4,6 +4,10 @@
     refs:
     - "refs/heads/main"
   fail_on_prepare_env_warning: true
+  trigger_conditions:
+  - trigger_condition: "SUCCESS_PIPELINE"
+    trigger_project_name: "my-cv"
+    trigger_pipeline_name: "Test Deploy action"
   actions:
   - action: "npm run dist"
     type: "BUILD"

@@ -5,6 +5,15 @@
     - "refs/heads/main"
   fail_on_prepare_env_warning: true
   actions:
+  - action: "npm run dist"
+    type: "BUILD"
+    docker_image_name: "library/node"
+    docker_image_tag: "20"
+    execute_commands:
+    - "# yarn install"
+    - "npm install"
+    - "npm run dist"
+    shell: "BASH"
   - action: "Transfer to 82.180.152.249"
     type: "SFTP"
     local_path: "/"

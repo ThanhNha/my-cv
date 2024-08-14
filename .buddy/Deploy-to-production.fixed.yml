@@ -8,7 +8,7 @@
   - action: "npm run dist"
     type: "BUILD"
     docker_image_name: "library/node"
-    docker_image_tag: "20"
+    docker_image_tag: "18.17.0"
     execute_commands:
     - "# yarn install"
     - "npm install"

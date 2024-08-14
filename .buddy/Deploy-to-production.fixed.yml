@@ -27,6 +27,6 @@
     content: "[#$BUDDY_EXECUTION_ID] $BUDDY_PIPELINE_NAME run by [$BUDDY_TRIGGERING_ACTOR]($BUDDY_TRIGGERING_ACTOR_URL)"
     integration: "7EKz9qJ38bj9xe3AORZm2PQ4A1"
     trigger_conditions:
-    - trigger_condition: "SUCCESS_PIPELINE"
-      trigger_project_name: "my-cv"
-      trigger_pipeline_name: "Deploy to production"
+    - trigger_condition: "ACTION_STATUS_IS"
+      trigger_status: "SUCCESSFUL"
+      trigger_action_name: "Transfer to 82.180.152.249"

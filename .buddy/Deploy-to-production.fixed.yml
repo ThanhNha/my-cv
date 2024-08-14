@@ -12,7 +12,7 @@
     execute_commands:
     - "# yarn install"
     - "npm install"
-    - "npm run sass"
+    - ""
     shell: "BASH"
   - action: "Transfer to 82.180.152.249"
     type: "SFTP"

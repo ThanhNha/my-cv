@@ -14,6 +14,7 @@
     password: "secure!hgvHG+Tpq9Di3ZTPnubyHQ==.xJWKiheE/t1DOhEh1Bm59Q=="
     host: "82.180.152.249"
     port: "65002"
+    deletion_disabled: true
     deployment_excludes:
     - ".git"
   - action: "Send notification to Telegram Channel"

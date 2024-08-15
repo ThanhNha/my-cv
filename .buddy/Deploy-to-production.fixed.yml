@@ -9,13 +9,13 @@
     type: "FTP"
     disabled: true
     input_type: "BUILD_ARTIFACTS"
+    local_path: "/"
     remote_path: "/domains/theshin.online/public_html/shin"
     login: "u796998893"
     password: "secure!hgvHG+Tpq9Di3ZTPnubyHQ==.xJWKiheE/t1DOhEh1Bm59Q=="
     host: "82.180.152.249"
   - action: "Transfer to 82.180.152.249"
     type: "SFTP"
-    disabled: true
     input_type: "BUILD_ARTIFACTS"
     local_path: "/"
     remote_path: "/home/u796998893/home/u796998893/domains/theshin.online/public_html/shin"
